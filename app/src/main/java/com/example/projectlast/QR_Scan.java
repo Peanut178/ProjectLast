@@ -50,14 +50,14 @@ public class QR_Scan extends AppCompatActivity {
         if(intentResult.getContents() != null){
             //When result content is not null
             //Initialize alert dialog
-            Intent intent = new Intent(QR_Scan.this,Info_product.class);
+            Intent intent = new Intent(QR_Scan.this,Webb.class);
             intent.putExtra("key1" , intentResult.getContents());
             startActivity(intent);
 
         }else{
             //when result content is null
             //display toast
-            Toast.makeText(getApplicationContext(),"oop...may chua scan j ca",Toast.LENGTH_SHORT)
+            Toast.makeText(getApplicationContext(),"oop... chua scan j ca",Toast.LENGTH_SHORT)
                     .show();
         }
     }

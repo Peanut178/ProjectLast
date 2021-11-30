@@ -3,6 +3,7 @@
     package="com.example.projectlast">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -12,14 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectLast">
         <activity
-            android:name=".ConfirmOrdrActivity"
-            android:exported="false" />
+            android:name=".Webb"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-        <activity
-            android:name=".sanpham1"
-            android:exported="false" />
+
         <activity
             android:name=".Info_product"
             android:exported="false" />
